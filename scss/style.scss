@@ -46,6 +46,25 @@ img{
 -----------------------------------------*/
 
 
+.nav_bar{
+
+    z-index: 1000;
+    padding: 15px;
+    height: 25vh;
+    background-color: $backgroundColor;
+    position: sticky;
+    top:0;
+    transition: height 0.5s ease;
+
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
 .menulinks {
     font-size: 8em;
     text-align: center;
