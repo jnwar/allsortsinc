@@ -139,6 +139,14 @@ img{
     }
 }
 
+.open{
+    .griddropdown{
+        .item{
+            height: auto;
+        }
+    }
+}
+
 .linkdropdown {
     font-size: 6em;
     text-align: center;
@@ -147,6 +155,13 @@ img{
     font-weight: bold;
     margin: 0 25vw 5vw 25vw;
 }
+
+.open{
+    .linkdropdown{
+        display: block;
+    }
+}
+
 .textdropdown {
     display: grid;
     grid-template-areas: "one two" "three four" "five six";
@@ -157,6 +172,15 @@ img{
     margin: 5vw 3vw;
     grid-gap: 3vw;
 }
+
+.open{
+    .textdropdown{
+        .item{
+            height: auto;
+        }
+    }
+}
+
 .map {
     border: 2px solid #404040;
     width: 100%;
