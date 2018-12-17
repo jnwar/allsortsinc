@@ -148,12 +148,25 @@ img{
 }
 
 .linkdropdown {
-    font-size: 6em;
-    text-align: center;
-    border: 1px solid #404040;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 25vw 5vw 25vw;
+    display: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+    .item{
+        font-size: 6em;
+        text-align: center;
+        border: 1px solid #404040;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 16vw 5vw 16vw;
+
+        @media all and (max-width: 768px) { 
+            font-size: 4em;
+         } 
+        @media all and (max-width: 575px) { 
+            font-size: 3em; 
+        }
+    }
 }
 
 .open{
