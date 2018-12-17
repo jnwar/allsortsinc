@@ -91,15 +91,54 @@ img{
 
 
 .griddropdown {
-    display: grid;
-    grid-template-areas: "one two" "three four" "five six";
     text-align: left;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    margin: 5vw 3vw;
-    grid-gap: 3vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+    @media all and (max-width: 768px) { 
+        font-size: 3em;
+     } 
+    @media all and (max-width: 575px) { 
+        font-size: 2em; 
+    }
+
+    .item {
+
+        flex: 1 0 21%;
+        &:not(:nth-child(4n)) {
+            margin-right: 1.5vw;
+        }
+        height: 0;
+        overflow: hidden;
+
+        @media all and (max-width: 1199px) { 
+            flex: 1 0 21%;
+            &:not(:nth-child(4n)) {
+                margin-right: 1.5vw;
+            }
+        } 
+        @media all and (max-width: 768px) { 
+            flex: 1 0 48%;
+            &:nth-child(odd) {
+                margin-right: 1.5vw;
+            }
+        } 
+        @media all and (max-width: 575px) { 
+            flex: 1 0 48%;
+            &:nth-child(odd) {
+                margin-right: 1.5vw;
+            }
+        }
+
+    }
 }
+
 .linkdropdown {
     font-size: 6em;
     text-align: center;
