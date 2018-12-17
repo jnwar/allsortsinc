@@ -163,14 +163,24 @@ img{
 }
 
 .textdropdown {
-    display: grid;
-    grid-template-areas: "one two" "three four" "five six";
+    
     text-align: left;
     text-transform: none;
     font-weight: normal;
     font-size: .8em;
-    margin: 5vw 3vw;
-    grid-gap: 3vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+    .item {
+        width: 50%;
+        height: 0;
+        overflow: hidden;
+    }
+
+
 }
 
 .open{
