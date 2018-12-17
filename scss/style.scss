@@ -75,8 +75,21 @@ img{
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid #404040;
-    margin: 5vw 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    cursor: pointer;
+
+    @media all and (max-width: 768px) { 
+        font-size: 6em;
+     } 
+    @media all and (max-width: 575px) { 
+        font-size: 4em; 
+    }
+
 }
+
+
 .griddropdown {
     display: grid;
     grid-template-areas: "one two" "three four" "five six";
